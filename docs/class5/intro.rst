@@ -62,18 +62,20 @@ Accessing UDF (F5 Unified Demo Framework)
 +----------------------------------------------------------------------------------------------+
 
 +----------------------------------------------------------------------------------------------+
-| Attendees will be prompted to enter their UDF account, password and complete MFA as shown.   |
-| MFA must be completed by either selecting **Send Push** or **Enter Code**.                   |
+| Attendees will be prompted to enter their email address, password and complete MFA as shown. |
+| MFA must be completed by selecting one of the available methods.                             |
 |                                                                                              |
 | .. note::                                                                                    |
-|    *MFA process will very based on the MFA integration selected for the UDF Account. OKTA*   |
-|    *Verify is shown.*                                                                        |
+|    *MFA process will vary based on the MFA configuration for your UDF Account.*.             |
+|    *Email Verification is shown.*                                                                        |
 +----------------------------------------------------------------------------------------------+
 | |intro003|                                                                                   |
 |                                                                                              |
 | |intro004|                                                                                   |
 |                                                                                              |
-| |intro005|                                                                                   |
+| |intro003a|                                                                                  |
+|                                                                                              |
+| |intro003b|                                                                                  |
 +----------------------------------------------------------------------------------------------+
 
 +----------------------------------------------------------------------------------------------+
