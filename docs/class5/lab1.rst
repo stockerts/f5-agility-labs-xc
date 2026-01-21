@@ -1,12 +1,12 @@
 Lab 1: Explore Load Balancer and Review Traffic Dashboards
-=========================================================
+==========================================================
 
 Lab 1 will focus on the deployment and security of an existing hosted application using F5 
 Distributed Cloud Platform and Services. This lab will be deployed in a SaaS only configuration 
 with no on-premises (public or private cloud) elements.  All configurations will be made via 
 the F5 Distributed Cloud Console and within the F5 Distributed Cloud Global Network services architecture.
 
-For the tasks that follow, please note your individual **namespace**. Follow the instructions below 
+For the tasks that follow, please note your individual unique **namespace**. Follow the instructions below 
 which will guide you to locate your **namespace**. The **Delegated Domain** and the F5 Distributed Cloud 
 **Tenant** are listed below for your convenience as they will be the same for all lab attendees.
 
@@ -37,25 +37,21 @@ is a pre-requisite for all other tasks.
 | 1. From the Distributed Cloud (XC) Home Screen click **Web App & API Protection**, this will | 
 |                                                                                              |
 |    bring you into your name space.                                                           |
-|                                                                                              |
++----------------------------------------------------------------------------------------------+
+| |lab1-task1-01|                                                                              |
++----------------------------------------------------------------------------------------------+
 | 2. In the upper left hand portion of the screen, note your unique **Namespace**, it will be  |
 |                                                                                              |
 |    used throughout this lab.                                                                 |
-+----------------------------------------------------------------------------------------------+
-| |lab1-task1-01|                                                                              |
 |                                                                                              |
-+----------------------------------------------------------------------------------------------+
 | 3. Click on **Manage > Load Balancers > HTTP Load Balancers**.  You will see a               |
 |                                                                                              |
 |    a pre-configured HTTP Loadbalancer in the format of **<namespace>-lb**                    |
 |                                                                                              |
 | 4. On the right side, under Domains you should see a FQDN **namespace.lab-sec.f5demos.com**  |
-|                                                                                              |
-|                                                                                              |
 +----------------------------------------------------------------------------------------------+
 | |lab1-task1-02|                                                                              |
 +----------------------------------------------------------------------------------------------+
-|                                                                                              |
 | 5. Open a browser window and navigate to **http://namespace.lab-sec.f5demos.com** to         |
 |                                                                                              |
 |    verify the application is up.  You should see the F5 Airlines logo!                       |
@@ -94,11 +90,11 @@ current state.
 |                                                                                              |
 +----------------------------------------------------------------------------------------------+
 |                                                                                              |
-|  3. Click the back button at the bottom of the page, two times, and then review the Web      |               
+|  3. Click **Discard** then **Back** to return to the HTTP Load Balancer configuration page   |               
 |                                                                                              |
-|     Application Firewall and Bot Protection status. Notice both the Web Application Firewall |
+|     and then review the *Web Application Firewall* and *Bot Protection* status. Notice both  |
 |                                                                                              |
-|     and Bot Protection are disabled.  Click the **Cancel** and **Exit** buttons when         |
+|     are **disabled**. Click the **Close** button when                                        |
 |                                                                                              |
 |     finished.  Well it's no wonder your being attacked!  Lets dig into this...               |
 |                                                                                              |
@@ -120,12 +116,12 @@ perform a credential stuffing attack.
 |  traffic generation.  Because of that, we will play the role of an attacker and generate     |                                                                                            
 |  some interesting traffic.  Before we begin we need to configure the tool                    |
 |                                                                                              |
-|  1. RDP or Console into the Windows Jump Host, you can locate the password here:             |
+|  1. RDP or Console into the Windows Jump Host, you can locate the username and password here:|
 |                                                                                              |
-|     **Password is located in your UDF Course browser page in the**                           |
+|     **Password is located in your UDF Course browser page!**                                 |
 |                                                                                              |
-|     **Deployment Tab > Jump Host > Click Details and find Credentials**                      |
-|                                                                                              |
+|     **Deployment Tab > JumpHost > Details** (look for the *Administrator* password under**   |
+|     **Credentials** on the *General* tab.                                                    |
 +----------------------------------------------------------------------------------------------+                                                                                             
 |  2. On the home screen double-click the OpenBullet 2 shortcut                                |
 +----------------------------------------------------------------------------------------------+
@@ -140,6 +136,7 @@ perform a credential stuffing attack.
 |  4. Notice there are two blocks called **"HTTP Request"**. Click on each one and update the  |
 |                                                                                              |
 |     URL by replacing the **<namespace>** with your assigned namespace and then **Save**      |
+|     and **OK**.                                                                              |
 +----------------------------------------------------------------------------------------------+
 | |lab1-task3-04|                                                                              |
 |                                                                                              |
@@ -154,15 +151,15 @@ perform a credential stuffing attack.
 +----------------------------------------------------------------------------------------------+
 | 6. In the new window, on the top left, click **"Select Config"** and then **Basic**          |
 |                                                                                              |
-|    finally **Accept** at the bottom.                                                         |
+|    Click **Accept** once to return to the *Edit job* screen.                                 |
 +----------------------------------------------------------------------------------------------+
 | |lab1-task3-09|                                                                              |
 |                                                                                              |
 | |lab1-task3-10|                                                                              |
 +----------------------------------------------------------------------------------------------+
-| 7. On the top right, click **Select Wordlist** and then **Credentials-Basic** and finally    |
+| 7. On the top right, click **Select Wordlist** and then **Credentials-Basic** and then click |
 |                                                                                              |
-|    **Accept** at the bottom.                                                                 |
+|    **Accept** once to return to the *Edit job* screen.                                       |
 +----------------------------------------------------------------------------------------------+
 | |lab1-task3-11|                                                                              |
 |                                                                                              |
@@ -189,6 +186,8 @@ perform a credential stuffing attack.
 | 9.  Were any credentials successful ?  You should see one successful login attempt on the    |
 |                                                                                              |
 |     right-side Openbullet panel                                                              |
+|                                                                                              |
+| |lab1-task3-18|                                                                              |
 +----------------------------------------------------------------------------------------------+
 
 
@@ -321,12 +320,6 @@ credential stuffing traffic.
 | |labend|                                                                                     |
 +----------------------------------------------------------------------------------------------+
 
-.. |lab001| image:: _static/lab1-001.png
-   :width: 800px
-.. |lab002| image:: _static/lab1-002.png
-   :width: 800px
-.. |lab003| image:: _static/lab1-003.png
-   :width: 800px
 .. |lab1-task1-01| image:: _static/lab1-task1-01.png
    :width: 800px
 .. |lab1-task1-02| image:: _static/lab1-task1-02.png
@@ -375,6 +368,8 @@ credential stuffing traffic.
    :width: 800px
 .. |lab1-task3-17| image:: _static/lab1-task3-17.png
    :width: 800px
+.. |lab1-task3-18| image:: _static/lab1-task3-18.png
+   :width: 800px
 .. |lab1-task4-01| image:: _static/lab1-task4-01.png
    :width: 800px
 .. |lab1-task4-02| image:: _static/lab1-task4-02.png
@@ -392,114 +387,6 @@ credential stuffing traffic.
 .. |lab1-task5-05| image:: _static/lab1-task5-05.png
    :width: 800px
 .. |lab1-task5-06| image:: _static/lab1-task5-06.png
-   :width: 800px
-.. |lab004| image:: _static/lab1-004.png
-   :width: 800px
-.. |lab005| image:: _static/lab1-005.png
-   :width: 800px
-.. |lab006| image:: _static/lab1-006.png
-   :width: 800px
-.. |lab007| image:: _static/lab1-007.png
-   :width: 800px
-.. |lab008| image:: _static/lab1-008.png
-   :width: 800px
-.. |lab009| image:: _static/lab1-009.png
-   :width: 800px
-.. |lab010| image:: _static/lab1-010.png
-   :width: 800px
-.. |lab011| image:: _static/lab1-011.png
-   :width: 800px
-.. |lab012| image:: _static/lab1-012.png
-   :width: 800px
-.. |lab013| image:: _static/lab1-013.png
-   :width: 800px
-.. |lab014| image:: _static/lab1-014.png
-   :width: 800px
-.. |lab015| image:: _static/lab1-015.png
-   :width: 800px
-.. |lab016| image:: _static/lab1-016.png
-   :width: 800px
-.. |lab017| image:: _static/lab1-017.png
-   :width: 800px
-.. |lab018| image:: _static/lab1-018.png
-   :width: 800px
-.. |lab019| image:: _static/lab1-019.png
-   :width: 800px
-.. |lab020| image:: _static/lab1-020.png
-   :width: 800px
-.. |lab021| image:: _static/lab1-021.png
-   :width: 800px
-.. |lab022| image:: _static/lab1-022.png
-   :width: 800px
-.. |lab023| image:: _static/lab1-023.png
-   :width: 800px
-.. |lab024| image:: _static/lab1-024.png
-   :width: 800px
-.. |lab025| image:: _static/lab1-025.png
-   :width: 800px
-.. |lab026| image:: _static/lab1-026.png
-   :width: 800px
-.. |lab027| image:: _static/lab1-027.png
-   :width: 800px
-.. |lab028| image:: _static/lab1-028.png
-   :width: 800px
-.. |lab029| image:: _static/lab1-029.png
-   :width: 800px
-.. |lab030| image:: _static/lab1-030.png
-   :width: 800px
-.. |lab031| image:: _static/lab1-031.png
-   :width: 800px
-.. |lab032| image:: _static/lab1-032.png
-   :width: 800px
-.. |lab033| image:: _static/lab1-033.png
-   :width: 800px
-.. |lab034| image:: _static/lab1-034.png
-   :width: 800px
-.. |lab035| image:: _static/lab1-035.png
-   :width: 800px
-.. |lab036| image:: _static/lab1-036.png
-   :width: 800px
-.. |lab037| image:: _static/lab1-037.png
-   :width: 800px
-.. |lab038| image:: _static/lab1-038.png
-   :width: 800px
-.. |lab039| image:: _static/lab1-039.png
-   :width: 800px
-.. |lab040| image:: _static/lab1-040.png
-   :width: 800px
-.. |lab041| image:: _static/lab1-041.png
-   :width: 800px
-.. |lab042| image:: _static/lab1-042.png
-   :width: 800px
-.. |lab043| image:: _static/lab1-043.png
-   :width: 800px
-.. |lab044| image:: _static/lab1-044.png
-   :width: 800px
-.. |lab045| image:: _static/lab1-045.png
-   :width: 800px
-.. |lab046| image:: _static/lab1-046.png
-   :width: 800px
-.. |lab047| image:: _static/lab1-047.png
-   :width: 800px
-.. |lab048| image:: _static/lab1-048.png
-   :width: 800px
-.. |lab049| image:: _static/lab1-049.png
-   :width: 800px
-.. |lab050| image:: _static/lab1-050.png
-   :width: 800px
-.. |lab051| image:: _static/lab1-051.png
-   :width: 800px
-.. |lab052| image:: _static/lab1-052.png
-   :width: 800px
-.. |lab053| image:: _static/lab1-053.png
-   :width: 800px
-.. |lab054| image:: _static/lab1-054.png
-   :width: 800px
-.. |lab055| image:: _static/lab1-055.png
-   :width: 800px
-.. |lab056| image:: _static/lab1-056.png
-   :width: 800px
-.. |lab057| image:: _static/lab1-057.png
    :width: 800px
 .. |labend| image:: _static/labend.png
    :width: 800px

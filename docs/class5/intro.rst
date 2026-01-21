@@ -66,8 +66,8 @@ Accessing UDF (F5 Unified Demo Framework)
 | MFA must be completed by selecting one of the available methods.                             |
 |                                                                                              |
 | .. note::                                                                                    |
-|    *MFA process will vary based on the MFA configuration for your UDF Account.*.             |
-|    *Email Verification is shown.*                                                                        |
+|    *MFA process will vary based on the MFA configuration for your UDF Account.*              |
+|    *Email Verification is shown.*                                                            |
 +----------------------------------------------------------------------------------------------+
 | |intro003|                                                                                   |
 |                                                                                              |
@@ -93,17 +93,17 @@ Accessing UDF (F5 Unified Demo Framework)
 
 +----------------------------------------------------------------------------------------------+
 | The Lab environment window will now be displayed.  Click on the **Documentation** tab in the |
-| horizontal navigation links.  Locate and observe the state of **Client** system.             |
-|                                                                                              |
-| In approximately 5-7 minutes the associated **yellow gear** starting icon will change to a   |
-| **green arrow** (running) icon and attendees will proceed to the next section of steps.      |
+| horizontal navigation links.  Locate and observe the state of **System**.                    |
 |                                                                                              |
 | .. note::                                                                                    |
-|    *Your specific lab environment may vary from the graphics shown below. The **Client***    |
-|    *will, however, be consistent.*                                                           |
+|    *Your specific lab environment may vary from the graphics shown below. Your environment   |
+|    might contain different systems.*                                                         |
 +----------------------------------------------------------------------------------------------+
 | |intro008|                                                                                   |
-|                                                                                              |
++----------------------------------------------------------------------------------------------+
+| In approximately 5-7 minutes the associated **yellow gear** starting icon will change to a   |
+| **green arrow** (running) icon and attendees will proceed to the next section of steps.      |
++----------------------------------------------------------------------------------------------+
 | |intro009|                                                                                   |
 +----------------------------------------------------------------------------------------------+
 
@@ -111,9 +111,9 @@ Accessing F5 Distributed Cloud
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 +----------------------------------------------------------------------------------------------+
-| Following the state change of the **Client System** to a **green arrow** (running) icon,     |
-| attendees will receive a second email.  This email will come from no-reply@cloud.f5.com.     |
-| Click the **Accept invitation** with in the email.                                           |
+| Shortly after joining the UDF course, attendees will receive a second email.                 |
+| This email will come from no-reply@cloud.f5.com.                                             |
+| Click the **Accept invitation** button within the email.                                     |
 |                                                                                              |
 | .. note::                                                                                    |
 |    *This link should be accessed in the same browser session as UDF was accessed for*        |
@@ -137,21 +137,21 @@ Accessing F5 Distributed Cloud
 | Next the **Terms of Service and Privacy Policy** will display, check the box and then click  |
 | **Accept and Agree**.                                                                        |
 |                                                                                              |
-| In the following screen, Select all persona roles and click **Next**. This allows attendees  |
-| to see all the various configurations. Personas can be changed anytime later within the      |
-| console if desired.                                                                          |
-|                                                                                              |
-| In the next screen, click **Advanced** to expose more menu options and then **Get Started**  |
-| to begin. You can change this setting after logging in as well.                              |
-|                                                                                              |
 | .. note::                                                                                    |
 |    *Several Guidance ToolTips or Notices may appear.  Attendees can safely close these out*  |
 |    *in order to begin the lab.*                                                              |
 +----------------------------------------------------------------------------------------------+
 | |intro012|                                                                                   |
-|                                                                                              |
++----------------------------------------------------------------------------------------------+
+| In the following screen, Select all persona roles and click **Next**. This allows attendees  |
+| to see all the various configurations. Personas can be changed anytime later within the      |
+| console if desired.                                                                          |
++----------------------------------------------------------------------------------------------+
 | |intro013|                                                                                   |
-|                                                                                              |
++----------------------------------------------------------------------------------------------+
+| In the next screen, click **Advanced** to expose more menu options and then **Get Started**  |
+| to begin. You can change this setting after logging in as well.                              |
++----------------------------------------------------------------------------------------------+
 | |intro014|                                                                                   |
 +----------------------------------------------------------------------------------------------+
 
@@ -168,8 +168,6 @@ Accessing F5 Distributed Cloud
 | |labbgn|                                                                                     |
 +----------------------------------------------------------------------------------------------+
 
-
-
 .. |intro000| image:: _static/intro-000.png
    :width: 800px
 .. |intro001| image:: _static/intro-01.png
@@ -177,6 +175,10 @@ Accessing F5 Distributed Cloud
 .. |intro002| image:: _static/intro-02.png
    :width: 800px
 .. |intro003| image:: _static/intro-03.png
+   :width: 800px
+.. |intro003a| image:: _static/intro-03a.png
+   :width: 800px
+.. |intro003b| image:: _static/intro-03b.png
    :width: 800px
 .. |intro004| image:: _static/intro-04.png
    :width: 800px
